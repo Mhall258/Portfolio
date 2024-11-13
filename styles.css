@@ -30,6 +30,13 @@ section {
     background-color: #f0f8ff;
 }
 
+#profile-image{
+    width: 25%;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
 #portfolio {
     padding: 40px;
     text-align: center;
@@ -92,81 +99,45 @@ button:hover {
     background-color: #0277bd;
 }
 
-/* Contact Section */
-#contact {
-    background-color: #f1f1f1;
-    padding: 40px;
+#social-links {
     text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
 }
 
-#contact h2 {
+#social-links h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
 }
 
-/* Contact Form */
-#contact-form {
+.social-icons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #fff;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Styling for social icons */
+.social-icon img {
+    width: 40px;
+    height: 40px;
     border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Form Elements */
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    box-sizing: border-box;
+/* Hover effect for the icons */
+.social-icon:hover img {
+    transform: scale(1.1); /* Slight zoom-in effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
-#contact-form textarea {
-    resize: vertical;
-    min-height: 150px;
+/* LinkedIn and GitHub Icon specific styling */
+#linkedin img {
+    background-color: #0077b5; /* LinkedIn Blue */
+    padding: 8px;
 }
 
-/* Placeholder Text */
-#contact-form input::placeholder,
-#contact-form textarea::placeholder {
-    color: #888;
-}
-
-/* Focus Effect */
-#contact-form input:focus,
-#contact-form textarea:focus {
-    border-color: #0288d1;
-    outline: none;
-}
-
-/* Submit Button */
-#contact-form button {
-    padding: 12px 20px;
-    background-color: #0288d1;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#contact-form button:hover {
-    background-color: #0277bd;
-}
-
-/* Responsive Form */
-@media (max-width: 600px) {
-    #contact-form {
-        width: 90%;
-    }
+#github img {
+    background-color: #333; /* GitHub Dark */
+    padding: 8px;
 }

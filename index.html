@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <!-- Navbar -->
@@ -19,6 +19,7 @@
 
     <!-- Home Section -->
     <section id="home">
+        <img id="profile-image" src="./Assets/me.JPG" alt="">
         <h1>Welcome to My Portfolio</h1>
         <p>Hi, I’m Miles Hall, a backend web developer and software engineer</p>
         <button onclick="scrollToSection('portfolio')">View My Work</button>
@@ -69,16 +70,18 @@
 
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <form id="contact-form" action="send-email.php" method="POST">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="social-links">
+        <h2>Connect with Me</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/miles-hall-405559264/" target="_blank" class="social-icon" id="linkedin">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Mhall258" target="_blank" class="social-icon" id="github">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+            </a>
+            
+        </div>
     </section>
-
     <script src="script.js"></script>
 </body>
 </html>
